@@ -1,13 +1,13 @@
 import React from 'react';
 
-const Landing: React.FC = () => {
+const Navigation: React.FC = () => {
     
 
     return (
         <section>
-           <h2>Landing View</h2>
+           <nav>Nav Bar</nav>
         </section>
     )
 }
 
-export default Landing;
+export default Navigation;
