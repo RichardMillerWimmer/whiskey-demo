@@ -3,7 +3,7 @@ import Landing from '../views/Landing';
 import {shallow, mount} from 'enzyme';
 import { render, fireEvent } from '@testing-library/react';
 import { act } from 'react-dom/test-utils'
-import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
+
 
 let container: any = null;
 
@@ -27,4 +27,4 @@ it("renders with heading", () => {
   act(() => {
     render(<Landing />, container);
   });
-  expect(container.textContent).toBe("Landing View")})
+  expect(container.textContent).toBe("Landing View")});
