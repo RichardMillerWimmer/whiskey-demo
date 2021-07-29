@@ -1,13 +1,14 @@
 import React from 'react';
 import Landing from '../views/Landing';
 import {shallow, mount} from 'enzyme';
-import { render, fireEvent, act } from '@testing-library/react';
+import { render, fireEvent } from '@testing-library/react';
+import { act } from 'react-dom/test-utils'
 import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
 
 let container: any = null;
 
 beforeEach(() => {
-  container = document.createElement('div');
+  container = document.createElement('section');
   document.body.appendChild(container);
 });
 afterEach(() => {
