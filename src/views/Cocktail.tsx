@@ -5,7 +5,7 @@ const Cocktail: React.FC = () => {
 
     return (
         <section>
-           <h2>Cocktail View</h2>
+           <h2 data-testid='CocktailId'>Cocktail View</h2>
         </section>
     )
 }

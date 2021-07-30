@@ -1,19 +1,19 @@
 import React from 'react';
 import Cocktail from '../views/Cocktail';
 import {shallow, mount} from 'enzyme';
-import { render, fireEvent } from '@testing-library/react';
+import { render, fireEvent, getByTestId } from '@testing-library/react';
 import { act } from 'react-dom/test-utils'
 
 let container: any = null;
 
 beforeEach(() => {
-  container = document.createElement('section');
-  document.body.appendChild(container);
+  container = render(<Cocktail />);
+  // document.body.appendChild(container);
 });
-afterEach(() => {
-  container.remove();
-  container = null;
-});
+// afterEach(() => {
+//   container.remove();
+//   container = null;
+// });
 
 it("Cocktail renders correctly", () => {
   const cocktailWrapper = shallow(
@@ -23,7 +23,5 @@ it("Cocktail renders correctly", () => {
 });
 
 it("renders with heading", () => {
-    act(() => {
-      render(<Cocktail />, container);
-    });
-    expect(container.textContent).toBe("Landing View")});
+    // render(<Cocktail />, container);
+    expect(container.textContent).toBe("Cocktail View")});
