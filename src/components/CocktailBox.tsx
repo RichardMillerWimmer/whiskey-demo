@@ -1,13 +1,15 @@
 import React from 'react';
 
-const Collection: React.FC = () => {
+const CocktailBox: React.FC = () => {
     
 
     return (
         <section>
-           <h3>Collection Component</h3>
+            <h3>Cocktail Name</h3>
+            <p>Cocktail Notes</p>
+            <p>Cocktail Recipie</p>
         </section>
     )
 }
 
-export default Collection;
+export default CocktailBox;
