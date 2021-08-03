@@ -12,8 +12,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Navigation />
-        {routes}
       </header>
+        {routes}
     </div>
   );
 }
